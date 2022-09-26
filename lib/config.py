@@ -30,35 +30,35 @@ NUMBER_OF_CALIBRATING_CYCLES = 2
 
 
 left_shade_file_names = {
-        "position" : "left_shade_position.bin",
-        "time_to_open" : "left_shade_time_to_open.bin",
-        "time_to_close" : "left_shade_time_to_close.bin",
-        "mid_to_top_timing" : "left_shade_mid_to_top_timing.bin",
-        "top_to_mid_timing" : "left_shade_top_to_mid_timing.bin",
-        "mid_to_bottom_timing" : "left_shade_mid_to_bottom_timing.bin",
-        "bottom_to_mid_timing" : "left_shade_bottom_to_mid_timing.bin"
+        "position" : "/data/left_shade_position.bin",
+        "time_to_open" : "/data/left_shade_time_to_open.bin",
+        "time_to_close" : "/data/left_shade_time_to_close.bin",
+        "mid_to_top_timing" : "/data/left_shade_mid_to_top_timing.bin",
+        "top_to_mid_timing" : "/data/left_shade_top_to_mid_timing.bin",
+        "mid_to_bottom_timing" : "/data/left_shade_mid_to_bottom_timing.bin",
+        "bottom_to_mid_timing" : "/data/left_shade_bottom_to_mid_timing.bin"
     }
 
 
 middle_shade_file_names = {
-        "position" : "middle_shade_position.bin",
-        "time_to_open" : "middle_shade_time_to_open.bin",
-        "time_to_close" : "middle_shade_time_to_close.bin",
-        "mid_to_top_timing" : "middle_shade_mid_to_top_timing.bin",
-        "top_to_mid_timing" : "middle_shade_top_to_mid_timing.bin",
-        "mid_to_bottom_timing" : "middle_shade_mid_to_bottom_timing.bin",
-        "bottom_to_mid_timing" : "middle_shade_bottom_to_mid_timing.bin"
+        "position" : "/data/middle_shade_position.bin",
+        "time_to_open" : "/data/middle_shade_time_to_open.bin",
+        "time_to_close" : "/data/middle_shade_time_to_close.bin",
+        "mid_to_top_timing" : "/data/middle_shade_mid_to_top_timing.bin",
+        "top_to_mid_timing" : "/data/middle_shade_top_to_mid_timing.bin",
+        "mid_to_bottom_timing" : "/data/middle_shade_mid_to_bottom_timing.bin",
+        "bottom_to_mid_timing" : "/data/middle_shade_bottom_to_mid_timing.bin"
     }
 
 
 right_shade_file_names = {
-        "position" : "right_shade_position.bin",
-        "time_to_open" : "right_shade_time_to_open.bin",
-        "time_to_close" : "right_shade_time_to_close.bin",
-        "mid_to_top_timing" : "right_shade_mid_to_top_timing.bin",
-        "top_to_mid_timing" : "right_shade_top_to_mid_timing.bin",
-        "mid_to_bottom_timing" : "right_shade_mid_to_bottom_timing.bin",
-        "bottom_to_mid_timing" : "right_shade_bottom_to_mid_timing.bin"
+        "position" : "/data/right_shade_position.bin",
+        "time_to_open" : "/data/right_shade_time_to_open.bin",
+        "time_to_close" : "/data/right_shade_time_to_close.bin",
+        "mid_to_top_timing" : "/data/right_shade_mid_to_top_timing.bin",
+        "top_to_mid_timing" : "/data/right_shade_top_to_mid_timing.bin",
+        "mid_to_bottom_timing" : "/data/right_shade_mid_to_bottom_timing.bin",
+        "bottom_to_mid_timing" : "/data/right_shade_bottom_to_mid_timing.bin"
     }
 
 # GPIO pins
