@@ -1,7 +1,7 @@
 import uasyncio as asyncio
 import time
 
-from config import SSID, PSSWRD
+from private import SSID, PSSWRD
 
 
 def connect_to_network(wlan, led):
@@ -16,7 +16,7 @@ def connect_to_network(wlan, led):
         max_wait -= 1
         print('Waiting for connection...')
         time.sleep(1)
-    
+
     if wlan.status() != 3:
         raise RuntimeError('Network connection failed :(')
         led.on()
@@ -25,12 +25,10 @@ def connect_to_network(wlan, led):
         status = wlan.ifconfig()
         print('ip = ' + status[0])
         led.off()
-        
-        
+
+
 async def heartbeat(led):
     led.on()
     await asyncio.sleep(0.2)
     led.off()
     await asyncio.sleep(7)
-        
-
