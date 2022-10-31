@@ -4,10 +4,10 @@ import socket
 import time
 import uasyncio as asyncio
 
-from config import MOVE_SHADE, LED, LEFT_SHADE, MIDDLE_SHADE, RIGHT_SHADE, ALL_SHADES, OPEN, CLOSED, MID
+from config import *
 from controls import move_shade_to
 from machine import Pin
-from main_helpers import connect_to_network, heartbeat
+from main_helpers import *
 
 
 led = Pin(LED, Pin.OUT, 0)
@@ -63,9 +63,11 @@ async def main():
         
 
 try:
+    set_up_timers()
     asyncio.run(main())
 
 finally:
+    asyncio.create_task(log_request('in_finally_statement_of_main.py'))
     asyncio.new_event_loop()
     print('End of "finally" statement')
 

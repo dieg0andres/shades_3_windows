@@ -1,9 +1,11 @@
+# Home web server ip address
+HOME_SERVER = 'http://192.168.86.32:8080'
 
 # shades
 LEFT_SHADE = 'left_shade'
 MIDDLE_SHADE = 'middle_shade'
 RIGHT_SHADE = 'right_shade'
-ALL_SHADES = 'all_shades'
+ALL_SHADES = 'all_shade'
 
 # get request command
 MOVE_SHADE = '/move_shade'
