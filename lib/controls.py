@@ -1,7 +1,7 @@
 import time
 import uasyncio as asyncio
 
-from config import OPEN, MID, CLOSED, UP, DOWN, PWM_C, IN1, IN2, LEFT_SHADE, MIDDLE_SHADE, RIGHT_SHADE, ALL_SHADES # Shade positions, motor directions, and Pins
+from config import *
 from machine import Pin, PWM
 
 
@@ -282,3 +282,11 @@ async def move_shade_to(shade, position, shades):
             await left_shade.go_to_mid()
             await middle_shade.go_to_mid()
             await right_shade.go_to_mid()
+        if position == NUDGE_UP:
+            await left_shade.motor.up(time_=0.25)
+            await middle_shade.motor.up(time_=0.25)
+            await right_shade.motor.up(time_=0.25)
+        if position == NUDGE_DOWN:
+            await left_shade.motor.down(time_=0.25)
+            await middle_shade.motor.down(time_=0.25)
+            await right_shade.motor.down(time_=0.25)

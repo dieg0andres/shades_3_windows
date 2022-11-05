@@ -35,8 +35,8 @@ async def serve_client(reader, writer):
     
     if command == 6: # command is to move_shade
 
-        shade = request.split(' ')[1].split('/')[2] # which is the shade to move (left_shade, middle_shade, right_shade)
-        position = request.split(' ')[1].split('/')[3] # to which position (open, closed, mid)
+        shade = request.split(' ')[1].split('/')[2] # which is the shade to move (left_shade, middle_shade, right_shade, all_shade)
+        position = request.split(' ')[1].split('/')[3] # to which position (open, closed, mid, nudge_up, nudge_down)
 
         shades = [left_shade, middle_shade, right_shade]
         await move_shade_to(shade, position, shades)

@@ -14,6 +14,8 @@ MOVE_SHADE = '/move_shade'
 OPEN = "open"
 CLOSED = "closed"
 MID = "mid"
+NUDGE_UP = "nudge_up"
+NUDGE_DOWN = "nudge_down"
 
 # Motor directions
 UP = "up"
